@@ -1,20 +1,50 @@
+
+body {
+    background-color: #96d2ff;
+    font-size: 1em;
+}
+
+/* Aligns the search box to be in the middle */
 header {
     display: flex;
     justify-content: center;
     margin: 5vh 0;
 }
 
+/* Style the search input  */
+input {
+    background-color: #96d2ff;
+    color: white;
+    width: 200px;
+    height: 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Use Grid on the container */
 .galleryContainer {
     max-width: 1000px;
     display: grid;
+    display: -ms-grid;
     margin: auto;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* This makes the layout responsive */
     grid-template-rows: repeat(3, minmax(220px, 1fr));
     grid-row-gap: 2px;
 }
 
+/* Aligns the items within the galleryContainer so they are in the center */
 .gallery {
 display: flex;
 justify-content: center;
+}
+
+/* Opacity to 1 so you cannot see the thumbnail images in the background */
+.lightboxOverlay {
+opacity: 1;
+}
+
+/* Change the colour of the border for the lightbox images */
+.lightbox .lb-image {
+    border: 4px solid #96d2ff;
 }
 

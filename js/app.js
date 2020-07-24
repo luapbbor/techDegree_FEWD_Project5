@@ -1,7 +1,7 @@
 
 // ====================================================================
 // This function listens for a "keyup" event on the search box and then
-// filters the images via the caption (data-title)
+// filters the images via the caption (data-caption)
 // ====================================================================
 
 document.querySelector("#search").addEventListener("keyup", function () {
@@ -18,7 +18,7 @@ document.querySelector("#search").addEventListener("keyup", function () {
     // loops through all of the gallery items
     for (let i = 0; i < galleryItems.length; i++){
     //  get the value from the data-title for each iteration throught he loop
-     const caption = galleryItems[i].getAttribute("data-title").toLowerCase();
+     const caption = galleryItems[i].getAttribute("data-caption").toLowerCase();
      // if the caption includes the text typed into the search box the image will display, else it will not.
         if (caption.includes(searchInputLower)) {
             galleryItems[i].style.display = "block";

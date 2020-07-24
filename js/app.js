@@ -1,7 +1,17 @@
+    //   load baguette box
+    window.addEventListener('load', function() {
+        baguetteBox.run('.galleryContainer', {
+         // baguette box Custom options
+         // https://github.com/feimosi/baguetteBox.js/#customization
+         buttons:true,
+         noScrollbars: true,
+         }); 
+     }); 
+
 
 // ====================================================================
 // This function listens for a "keyup" event on the search box and then
-// filters the images via the caption (data-caption)
+// filters the images via the caption (data-caption
 // ====================================================================
 
 document.querySelector("#search").addEventListener("keyup", function () {

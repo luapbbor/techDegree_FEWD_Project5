@@ -13,12 +13,13 @@ header {
 
 /* Style the search input  */
 input {
-    background-color: #96d2ff;
-    color: white;
+    background-color: white;
+    color: black;
     width: 200px;
     height: 30px;
     font-size: 1.2rem;
     border-radius: 5px;
+	outline: none;
 }
 
 /* Use Grid on the container */
